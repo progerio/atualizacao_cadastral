@@ -5,3 +5,15 @@ SQL Monitor iniciado
 Banco: db.controllab.com:5432/dados_prod
 Intervalo: 30s
 --------------------------------------------------------
+ALTERAÇÃO DETECTADA!
+Anterior: 2
+Atual:    4
+SQL Monitor encerrado
+SQL Monitor iniciado
+Banco: db.controllab.com:5432/dados_prod
+Intervalo: 30s
+--------------------------------------------------------
+Conexão com PostgreSQL estabelecida
+ALTERAÇÃO DETECTADA!
+Anterior: 4
+Atual:    3
