@@ -1,0 +1,25 @@
+database:
+  host: "db.controllab.com"
+  port: 5432
+  name: "dados_prod"
+  user: "root"
+  sslmode: "require"
+
+monitor:
+  interval: 30
+
+  state_file: "last-value"
+
+  log_file: "atualizacao-cadastral-monitor.log"
+
+  query: |
+    SELECT COUNT(*)
+    FROM log.parceiros logp
+    JOIN parceiros p
+      ON p.id_parceiro = logp.id_parceiro
+    JOIN log.parceiros_estabelecimentos logpe
+      ON logp.id_parceiro = logpe.id_parceiro
+    JOIN parceiros_estabelecimentos pe
+      ON pe.id_estab = logpe.id_estab
+    JOIN usuarios usu
+      ON usu.id_usu = logp.id_usu_part;
