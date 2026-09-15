@@ -20,3 +20,10 @@ Atual:    3
 ALTERAÇÃO DETECTADA!
 Anterior: 3
 Atual:    4
+SQL Monitor encerrado
+SQL Monitor iniciado
+Banco: db.controllab.com:5432/dados_prod
+Intervalo: 30s
+--------------------------------------------------------
+Conexão com PostgreSQL estabelecida
+SQL Monitor encerrado
