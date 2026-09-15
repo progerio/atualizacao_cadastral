@@ -18,8 +18,8 @@ monitor:
     JOIN parceiros p
       ON p.id_parceiro = logp.id_parceiro
     JOIN log.parceiros_estabelecimentos logpe
-      ON logp.id_parceiro = logpe.id_parceiro
+      ON logp.id_parceiro = logpe.id_parceiro and logp.id_usu_part = logpe.id_usu_part
     JOIN parceiros_estabelecimentos pe
-      ON pe.id_estab = logpe.id_estab
+      ON pe.id_estab = logpe.id_estab 
     JOIN usuarios usu
       ON usu.id_usu = logp.id_usu_part;
