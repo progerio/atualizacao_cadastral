@@ -6,7 +6,7 @@ database:
   sslmode: "require"
 
 monitor:
-  interval: 30
+  interval: 60
 
   state_file: "last-value"
 
